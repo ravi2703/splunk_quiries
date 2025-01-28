@@ -1,0 +1,1 @@
+index=nix host IN(lds5wtc44,lds5tcw66) source=df mount IN(/apps_01/webapps,/apps_01/mc,/var/log,/sys_apps_01/intiss) | dedup host,mount,Size,Used,Avail,PercentFreeSpace | table host,mount,user,Size,Avail,PercentFreeSpace | where PercentFreeSpace <= 25

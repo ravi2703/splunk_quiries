@@ -1,0 +1,1 @@
+index="_internal" source="/sys_apps_01/splunk/var/log/splunk/metrics.log" eventtype="nix-all-logs" name=exec cpu_seconds=0 processor=exec

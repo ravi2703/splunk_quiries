@@ -1,0 +1,1 @@
+index=nix USER="RR" source=ps app IN(*event proessor, *agent, *api*) | dedup host, PID, app | table host, PID, USER, app, STATUS | eval STATUS=if(PID==0, "NOT RUNNING", RUNNING") | status count by host, PID, USER, app, STATUS | sort by app 
